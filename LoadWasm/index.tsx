@@ -1,5 +1,9 @@
 import "./wasm_exec.js";
 import "./wasmTypes.d.ts";
+
+
+import "../src/helpers/multiply.ts";
+
 const wasmFile = "main.wasm";
 import WasmLoading from "./WasmLoading";
 

@@ -13,5 +13,7 @@ func myGolangFunction() js.Func {
 func main() {
 	ch := make(chan struct{}, 0)
 	js.Global().Set("myGolangFunction", myGolangFunction())
+	ans := js.Global().Call("multiply", 2, 3)
+	println(ans.Int())
 	<-ch
 }
